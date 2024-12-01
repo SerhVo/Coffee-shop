@@ -1,0 +1,218 @@
+/* Переменные */
+:root {
+  --font-primary: "Merienda", cursive;
+  --font-secondary: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-grey: rgba(255, 255, 255, 0.696);
+  --color-shadow: rgba(0, 0, 0, 0.2);
+
+  --spacing-default: 20px;
+  --spacing-large: 80px;
+  --spacing-header-padding: 150px;
+
+  --border-radius: 5px;
+  --transition-default: 0.3s ease;
+}
+
+/* Общие стили */
+* {
+  font-family: var(--font-primary);
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+code {
+  font-family: var(--font-secondary);
+}
+
+/* Контейнеры */
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 200px;
+}
+
+.pt-80 {
+  padding-top: var(--spacing-large);
+}
+
+/* Шапка */
+.header {
+  color: var(--color-white);
+  text-align: center;
+  padding: 10px 0 var(--spacing-header-padding);
+}
+
+.header-background {
+  background: url("/public/img/desk-791178_1920@2x.jpg") center / cover no-repeat;
+}
+
+/* Меню */
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.link {
+  color: var(--color-white);
+  margin-right: 40px;
+}
+
+/* Кнопка */
+.header__button {
+  background-color: transparent;
+  color: var(--color-white);
+  padding: 10px 42px;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-white);
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color var(--transition-default);
+}
+
+/* Тексты */
+.section-title {
+  margin-top: 110px;
+  font-weight: 700;
+}
+
+.title-h1 {
+  font-size: 40px;
+  margin-bottom: var(--spacing-default);
+}
+
+.title-h2 {
+  font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: var(--spacing-default);
+  text-align: center;
+}
+
+.text-section {
+  font-size: 14px;
+  margin: 50px 0;
+}
+
+/* Линии */
+.line-container {
+  position: relative;
+  display: inline-block;
+  margin: var(--spacing-default) 0 35px;
+  width: 200px;
+}
+
+.line-container::before,
+.line-container::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 1px;
+  background-color: var(--color-white);
+  bottom: 25px;
+}
+
+.line-container::before {
+  left: 0;
+}
+
+.line-container::after {
+  right: 0;
+}
+
+.line-container-black::before,
+.line-container-black::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 1px;
+  background-color: var(--color-black);
+  bottom: -150px;
+}
+
+.line-container-black::before {
+  left: 730px;
+}
+
+.line-container-black::after {
+  right: 730px;
+}
+
+/* Карточки */
+.list_items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.card_item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 25px;
+  width: 220px;
+  height: 240px;
+  background-color: var(--color-grey);
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px var(--color-shadow);
+  cursor: pointer;
+  transition: transform var(--transition-default);
+}
+
+.item-img {
+  max-width: 151px;
+  object-fit: cover;
+}
+
+.card-text {
+  margin: 0 auto 0 25px;
+}
+
+/* Фоновые секции */
+.section-background {
+  background: url("/public/img/background.jpg") center / cover no-repeat;
+  height: 495px;
+}
+
+.mar-425 {
+  margin: var(--spacing-large) 375px;
+  text-align: center;
+}
+
+/* Подвал */
+.footer__container {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  padding: var(--spacing-default) 0;
+  text-align: center;
+}
+
+.footer_menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: var(--spacing-default) 0;
+}
+
+.footer__copyright {
+  margin-top: 10px;
+}
+
+.black {
+  color: var(--color-black) !important;
+}
