@@ -1,7 +1,8 @@
 /* Переменные */
 :root {
   --font-primary: "Merienda", cursive;
-  --font-secondary: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  --font-secondary: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
   --color-white: #fff;
   --color-black: #000;
   --color-grey: rgba(255, 255, 255, 0.696);
@@ -46,11 +47,13 @@ code {
 .header {
   color: var(--color-white);
   text-align: center;
-  padding: 10px 0 var(--spacing-header-padding);
+  margin-bottom: 110px;
+  padding-top: 30px;
 }
 
-.header-background {
-  background: url("/public/img/desk-791178_1920@2x.jpg") center / cover no-repeat;
+.hero-wrapper {
+  background: url("./assets/img/desk-791178_1920@2x.jpg") center / cover
+    no-repeat;
 }
 
 /* Меню */
@@ -85,8 +88,10 @@ code {
 
 /* Тексты */
 .section-title {
-  margin-top: 110px;
+  padding-bottom: 200px;
   font-weight: 700;
+  text-align: center;
+  color: var(--color-white);
 }
 
 .title-h1 {
@@ -107,7 +112,8 @@ code {
 }
 
 /* Линии */
-.line-container {
+.line-container,
+.line-container-black {
   position: relative;
   display: inline-block;
   margin: var(--spacing-default) 0 35px;
@@ -139,15 +145,16 @@ code {
   width: 60px;
   height: 1px;
   background-color: var(--color-black);
-  bottom: -150px;
 }
 
 .line-container-black::before {
-  left: 730px;
+  left: 10px;
+  bottom: 15px;
 }
 
 .line-container-black::after {
-  right: 730px;
+  right: 10px;
+  bottom: 15px;
 }
 
 /* Карточки */
@@ -185,7 +192,7 @@ code {
 
 /* Фоновые секции */
 .section-background {
-  background: url("/public/img/background.jpg") center / cover no-repeat;
+  background: url("./assets/img/background.jpg") center / cover no-repeat;
   height: 495px;
 }
 
@@ -200,12 +207,13 @@ code {
   color: var(--color-black);
   padding: var(--spacing-default) 0;
   text-align: center;
+  position: relative;
 }
 
 .footer_menu {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   margin: var(--spacing-default) 0;
 }
 

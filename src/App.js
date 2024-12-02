@@ -1,13 +1,10 @@
 
 import './App.css';
+import AboutUsPage from './components/pages/aboutUs';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        
-      </header>
-    </div>
+    <AboutUsPage/>
   );
 }
 
