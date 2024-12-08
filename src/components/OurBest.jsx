@@ -1,5 +1,6 @@
-import Card from "../card/Card";
-import coffeeData from "./coffeeDB.js";
+
+import Card from "./Card.jsx";
+import coffeeData from "../assets/coffeeDB.js";
 
 const OurBest = () => {
   if (!Array.isArray(coffeeData)) {
@@ -13,7 +14,7 @@ const OurBest = () => {
     <section>
       <div className="container section-background">
         <h2 className="title-h2 pt-80">Our best</h2>
-        <ul className="list_items">
+        <ul className="card-container ">
           {limitedCoffeeData.map((item) => {
             const { id, ...itemProps } = item;
             return (

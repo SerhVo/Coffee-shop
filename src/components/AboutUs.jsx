@@ -1,4 +1,4 @@
-import coffeeBeansImage from "../../assets/img/coffee_beansN3-black.svg";
+import coffeeBeansImage from "../assets/img/coffee_beansN3-black.svg";
 
 const AboutUs = () => {
   return (

@@ -5,7 +5,7 @@
     monospace;
   --color-white: #fff;
   --color-black: #000;
-  --color-grey: rgba(255, 255, 255, 0.696);
+  --color-grey: #ffffffb1;
   --color-shadow: rgba(0, 0, 0, 0.2);
 
   --spacing-default: 20px;
@@ -28,15 +28,39 @@
   margin: 0;
 }
 
-code {
-  font-family: var(--font-secondary);
-}
-
 /* Контейнеры */
 .container {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 200px;
+}
+.conteiner-card {
+  display: flex;
+  flex-direction: column;
+  /* margin: 0 25px; */
+}
+.container-line {
+  width: 50%;
+  margin: 60px;
+}
+
+.cont-line {
+  width: 35%;
+  margin: 60px auto;
+}
+
+.card_item-img {
+  height: 115px;
+  margin: 15px auto;
+}
+
+.card_item li {
+  padding: 10px; /* Добавим внутренние отступы */
+}
+
+.d-flex {
+  display: flex;
+  margin: 0 50px;
 }
 
 .pt-80 {
@@ -55,6 +79,10 @@ code {
   background: url("./assets/img/desk-791178_1920@2x.jpg") center / cover
     no-repeat;
 }
+.heroOC-wrapper {
+  background: url("./assets/img/our_coffee.jpg") center / cover no-repeat;
+  height: 260px;
+}
 
 /* Меню */
 .header__nav {
@@ -66,6 +94,13 @@ code {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+.text {
+  width: 235px; /* Задаем фиксированную ширину */
+  white-space: nowrap; /* Запрещаем перенос строки */
+  overflow: hidden; /* Скрываем текст, выходящий за границы */
+  text-overflow: ellipsis; /* Добавляем многоточие */
 }
 
 .link {
@@ -86,12 +121,86 @@ code {
   transition: background-color var(--transition-default);
 }
 
+.back-btn {
+  display: block;
+  float: right;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #f9d185;
+  color: var(--color-grey);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.back-btn:hover {
+  background-color: #fddfbe;
+  color: var(--color-black);
+}
+
 /* Тексты */
 .section-title {
   padding-bottom: 200px;
   font-weight: 700;
   text-align: center;
   color: var(--color-white);
+}
+.beans-text {
+  padding: 0 150px;
+  flex-direction: column;
+  align-items: center;
+}
+.section-img {
+  display: inline-block;
+  max-width: 270px;
+  height: auto;
+}
+.card-text-contr {
+  color: var(--color-black);
+  text-align: left;
+  font-size: 12px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.line-container_df-jc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.alignment {
+  display: flex;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+.container.alignment {
+  align-items: flex-end;
+}
+.mar-t-b {
+  margin-top: 70px;
+  margin-bottom: 60px;
+}
+
+.text-nomatch {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin: 50px;
+}
+
+.beans-img {
+  width: 270px;
+  height: 355px;
+}
+.mr-10 {
+  margin-right: 10px;
 }
 
 .title-h1 {
@@ -157,6 +266,42 @@ code {
   bottom: 15px;
 }
 
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10%;
+}
+
+.filter-btn {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  padding: 5px 20px;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-white);
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color var(--transition-default);
+  box-shadow: 0px 5px 15px var(--color-shadow);
+  text-align: center;
+  margin-right: 10px;
+}
+
+.filter-btn:hover,
+.active {
+  background-color: #efeeeeb1;
+  border-color: #efeeeeb1;
+}
+
+.filter-title {
+  color: var(--color-black);
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.df-ae {
+  display: flex;
+  align-items: flex-end;
+}
+
 /* Карточки */
 .list_items {
   display: flex;
@@ -165,15 +310,16 @@ code {
   align-items: center;
   margin-top: 40px;
 }
+.card-container {
+  margin: 20px 120px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px); /* Каждая колонка 300px */
+  gap: 60px; /* Расстояние между карточками */
+  justify-content: center; /* Центрируем карточки внутри контейнера */
+}
 
 .card_item {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 0 25px;
-  width: 220px;
-  height: 240px;
+  width: 250px;
   background-color: var(--color-grey);
   border-radius: 10px;
   box-shadow: 0px 5px 15px var(--color-shadow);
@@ -182,12 +328,39 @@ code {
 }
 
 .item-img {
-  max-width: 151px;
+  width: 100%;
+  max-height: 130px;
+  object-fit: cover;
+}
+
+.card-img {
+  width: 400px;
+  max-height: 360px;
   object-fit: cover;
 }
 
 .card-text {
-  margin: 0 auto 0 25px;
+  text-align: right;
+}
+
+.skeleton {
+  background: url("./assets/img/open_bag.jpg") center / cover no-repeat;
+  border-radius: 5px;
+  animation: shimmer 1.5s infinite;
+}
+
+.skeleton-img {
+  width: 100%;
+  height: 130px;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -100%;
+  }
+  100% {
+    background-position: 100%;
+  }
 }
 
 /* Фоновые секции */
@@ -223,4 +396,22 @@ code {
 
 .black {
   color: var(--color-black) !important;
+}
+
+.search-input {
+  padding: 5px;
+  width: 180px;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-white);
+  border-radius: 4px;
+  box-shadow: 0px 5px 15px var(--color-shadow);
+  cursor: pointer;
+  transition: transform var(--transition-default);
+  text-align: center;
+}
+.aic {
+  align-items: center;
+}
+.mt-20 {
+  margin-top: 20px;
 }
