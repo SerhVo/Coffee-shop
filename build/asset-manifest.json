@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9fae8f35.css",
+    "main.js": "/static/js/main.5d552fa6.js",
+    "static/js/453.ca683c21.chunk.js": "/static/js/453.ca683c21.chunk.js",
+    "static/media/background.jpg": "/static/media/background.cc2802f37446010c6b18.jpg",
+    "static/media/desk-791178_1920@2x.jpg": "/static/media/desk-791178_1920@2x.fa4ece99ba488915dd71.jpg",
+    "static/media/our_coffee.jpg": "/static/media/our_coffee.edd42ac43a31c1465050.jpg",
+    "static/media/coffee_for_pleasure.jpg": "/static/media/coffee_for_pleasure.93eb7f54288db29208d8.jpg",
+    "static/media/aromistico.jpg": "/static/media/aromistico.b6c0477da408827ff3a8.jpg",
+    "static/media/presto_coffee_beans.jpg": "/static/media/presto_coffee_beans.9ac86bcd0a0cc0b11c17.jpg",
+    "static/media/girl_with_coffee.jpg": "/static/media/girl_with_coffee.12cd1a97b3ec3eca8ef3.jpg",
+    "static/media/solimo_coffee_beans.jpg": "/static/media/solimo_coffee_beans.b717904bfa469fdbf0b1.jpg",
+    "static/media/AROMISTICO_coffee.jpg": "/static/media/AROMISTICO_coffee.d7549c274aeb1f0994f4.jpg",
+    "static/media/card_coffee.jpg": "/static/media/card_coffee.d7549c274aeb1f0994f4.jpg",
+    "static/media/coffee.jpeg": "/static/media/coffee.beabe06d95e30058776b.jpeg",
+    "static/media/open_bag.jpg": "/static/media/open_bag.64d91eeaf5f11a2dc294.jpg",
+    "static/media/paket-dlya.jpeg": "/static/media/paket-dlya.13f308d0ffc083383abb.jpeg",
+    "static/media/bag-coffee-with-words-espresso-it_962508-6066.jpeg": "/static/media/bag-coffee-with-words-espresso-it_962508-6066.e4bab04863a4558f94f4.jpeg",
+    "static/media/bag-coffee-with-cup-coffee-background_962508-5990.jpeg": "/static/media/bag-coffee-with-cup-coffee-background_962508-5990.a1a6f1704030ab51daa0.jpeg",
+    "static/media/coffee_cup.jpg": "/static/media/coffee_cup.1eac584a25c0d76928aa.jpg",
+    "static/media/coffee_beans.svg": "/static/media/coffee_beans.c1ca200648e5ebd47261d6cd04548e8e.svg",
+    "static/media/coffee_beans2b.svg": "/static/media/coffee_beans2b.750dd53cdcf920a2a59b532c3dce1ea9.svg",
+    "static/media/coffee_beansN3.svg": "/static/media/coffee_beansN3.a1450050bbf2e1caca986da9921ac44d.svg",
+    "static/media/coffee_beansN3-black.svg": "/static/media/coffee_beansN3-black.6495e102f339fea011d73109cd7ebe54.svg",
+    "index.html": "/index.html",
+    "main.9fae8f35.css.map": "/static/css/main.9fae8f35.css.map",
+    "main.5d552fa6.js.map": "/static/js/main.5d552fa6.js.map",
+    "453.ca683c21.chunk.js.map": "/static/js/453.ca683c21.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9fae8f35.css",
+    "static/js/main.5d552fa6.js"
+  ]
+}

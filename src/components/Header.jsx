@@ -4,7 +4,7 @@ import coffeeBeansImage from "../assets/img/coffee_beans.svg";
 const menuItems = [
   { to: "/", label: "Coffee house" },
   { to: "/ourCoffee", label: "Our coffee" },
-  { to: "/ourPlesuare", label: "For your pleasure" },
+  { to: "/ourPleasure", label: "For your pleasure" },
 ];
 
 const Header = () => {

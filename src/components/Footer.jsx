@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const menuItems = [
   { to: "/", label: "Coffee house", imgSrc: coffeeBeans2 },
   { to: "/ourCoffee", label: "Our coffee" },
-  { to: "/ourPlesuare", label: "For your pleasure" },
+  { to: "/ourPleasure", label: "For your pleasure" },
 ];
 
 const Footer = () => {
