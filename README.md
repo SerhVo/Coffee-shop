@@ -1,5 +1,7 @@
 # Coffee House Website
 
+![alt text](image-1.png)
+
 This project is an adaptive website for a coffee shop. The site is made with modern design, which provides ease of use and aesthetic presentation of information. The main functionality includes displaying menus, information about the coffee shop, product cards, filters and animations.
 
 ## Technologies
